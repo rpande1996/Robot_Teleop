@@ -1,0 +1,24 @@
+vehicle_urdf_updated:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller 1
+  front_left_controller: 
+    type: effort_controllers/JointPositionController 
+    joint: front_left_pivot_joint 
+    pid : {p: 100.0, i: 0.01, d: 10.0}
+
+  # Controller 2
+  front_right_controller: 
+    type: effort_controllers/JointPositionController
+    joint: front_right_pivot_joint 
+    pid : {p: 100.0, i: 0.01, d: 10.0}
+
+  # Controller 3
+  rear_controller: 
+    type: velocity_controllers/JointVelocityController
+    joint: rear_transmission_joint  
+    pid : {p: 100.0, i: 0.01, d: 10.0}
+
+ 
