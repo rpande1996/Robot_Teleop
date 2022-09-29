@@ -54,7 +54,7 @@ SOFTWARE.
 
 Teleoperation:
 
-![teleop](media/teleop.gif)
+![teleop](media/tele_op.gif)
 
 
 ```
